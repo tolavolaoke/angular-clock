@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="clock"> <!--Name of application  -->
+<html ng-app="Clock"> <!--Name of application  -->
 
 <!-- https://siddii.github.io/angular-timer/ -->
   <head>
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-
-   <link href="css/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="css/main.css">
 
-   <script src="app.js" charset="utf-8"></script>
-   <script src="controller/clock.controller.js" charset="utf-8"></script>
-
-   <script src="bower_components/dist/angular-clock.js"></script>
+   <script src="node_modules/angular/angular.min.js" charset="utf-8"></script>
+   <script src="js/app.js" charset="utf-8"></script>
+   <script src="js/controller/clock.controller.js" charset="utf-8"></script>
 
 
     <title>Clock</title>
@@ -26,13 +21,13 @@
   <body>
 
     <section ng-controller="ClockController as clock" ui-view>
-
+<!--
       <p>
           {{ clock.clock | date: 'HH:mm:ss' }}
-        </p>
 
+        </p> -->
 
-
+      <p class="digital-time">{{ clock.date | date : "HH:mm:ss" : "+0100" }}</p>
 
     </section>
 

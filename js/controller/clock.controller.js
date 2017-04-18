@@ -9,14 +9,11 @@ function ClockController($timeout) {
   controller.tick();
 }
 
+ClockController.$inject =['$timeout'];
+
 
 
 
 angular
     .module('Clock')
     .controller('ClockController', ClockController);
-
-
-// angular
-//   .module('Clock')
-//   .controller('ClockController', ClockController);
