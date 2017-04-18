@@ -12,5 +12,5 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 angular
-  .module('ClockApp', ['ui.router'])
+  .module('Clock', ['ui.router'])
   .config(MainRouter);
