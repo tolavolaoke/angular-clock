@@ -21,13 +21,15 @@
   <body>
 
     <section ng-controller="ClockController as clock" ui-view>
-<!--
-      <p>
-          {{ clock.clock | date: 'HH:mm:ss' }}
 
-        </p> -->
+      <div class="digital-time">
 
-      <p class="digital-time">{{ clock.date | date : "HH:mm:ss" : "+0100" }}</p>
+
+    London: {{ clock.date | date : "HH:mm:ss" : "+0100" }}
+
+       New York: {{ clock.date | date : "HH:mm:ss" : "-0400" }}
+
+       Hong Kong: {{ clock.date | date : "HH:mm:ss" : "+0800" }}</div>
 
     </section>
 
