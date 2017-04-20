@@ -1,13 +1,15 @@
 * {
-  font-family: sans-serif;
-  color: white;
   background-image: url("../images/bedroom.jpg");
   background-repeat: no-repeat;
-  font-size: 50px;
-  font-weight: bold;
-
+  background-attachment:fixed;
+  background-position: center;
 }
 
-.digital-time{
-  display: block;
+div.time{
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+
+
 }

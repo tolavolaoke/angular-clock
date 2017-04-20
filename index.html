@@ -22,14 +22,11 @@
 
     <section ng-controller="ClockController as clock" ui-view>
 
-      <div class="digital-time">
+      <div class="time">London: {{ clock.date | date : "HH:mm:ss" : "+0100" }}</div>
 
+         <div class="time">New York: {{ clock.date | date : "HH:mm:ss" : "-0400" }}</div>
 
-    London: {{ clock.date | date : "HH:mm:ss" : "+0100" }}
-
-       New York: {{ clock.date | date : "HH:mm:ss" : "-0400" }}
-
-       Hong Kong: {{ clock.date | date : "HH:mm:ss" : "+0800" }}</div>
+         <div class="time">Hong Kong: {{ clock.date | date : "HH:mm:ss" : "+0800" }}</div>
 
     </section>
 
